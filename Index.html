@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bag Store</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lora', serif;
+      background-color: #fff;
+      color: #111;
+    }
+
+    header {
+      background-color: #F43F5E;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 0 0 20px 20px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .search-bar input {
+      padding: 10px;
+      width: 300px;
+      border: 2px solid silver;
+      border-radius: 20px;
+      background-color: silver;
+      font-family: 'Lora', serif;
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card {
+      padding: 20px;
+      border-radius: 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #F43F5E, #ffb6c1, #ffffff);
+      background-size: 200% 200%;
+      animation: glitter 3s infinite;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .brand {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* Glitter effect */
+    @keyframes glitter {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      background-color: #F43F5E;
+      color: white;
+      border-radius: 20px 20px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>✨ Bag Collection ✨</h1>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" placeholder="🔍 Search your bag here...">
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <img src="https://via.placeholder.com/150?text=Bag1" alt="Bag 1">
+      <div class="brand" style="color:#2563EB;">Nike</div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/150?text=Bag2" alt="Bag 2">
+      <div class="brand" style="color:#9333EA;">Adidas</div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/150?text=Bag3" alt="Bag 3">
+      <div class="brand" style="color:#10B981;">Puma</div>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/150?text=Bag4" alt="Bag 4">
+      <div class="brand" style="color:#F59E0B;">Gucci</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Bag Collection | Designed with 💖</p>
+  </footer>
+</body>
+</html>
